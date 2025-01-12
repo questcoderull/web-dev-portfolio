@@ -1,7 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Open Sans", serif;
+  outline: 0;
+}
+
+/* shared style */
+.text-primary {
+  color: #fd6e0a;
+}
+.dark-2 {
+  color: #474747;
+}
+.btn-primary {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px 36px;
+  color: #fff;
+  background-color: #fd6e0a;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: #ffd2d2;
+  border: 1px solid #fd6e0a;
+  color: black;
+}
+
+/* header style */
+header {
+  background-color: #fff8f3;
+  margin-bottom: 130px;
+}
+.header {
+  background-image: url(assets/developer.png), url(assets/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top 35px left, bottom right;
+}
+/* nav style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 200px;
+}
+
+.nav_title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 50px;
+}
+nav ul li a {
+  font-size: 20px;
+  color: #474747;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  font-weight: 700;
+  color: black;
+}
+/* nav section ends */
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 35px 0 200px;
+}
+.banner-content {
+  max-width: 580px;
+}
+.banner-greeting {
+  font-size: 45px;
+  font-weight: 600;
+}
+.banner-title {
+  font-size: 85px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.Download {
+  margin-right: 30px;
+}
+.banner-profile-pic {
+  width: 584px;
 }
