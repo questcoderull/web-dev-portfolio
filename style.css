@@ -11,6 +11,9 @@
 }
 
 /* shared style */
+i {
+  margin-right: 10px;
+}
 section {
   margin-bottom: 130px;
 }
@@ -125,6 +128,9 @@ nav ul li a:hover {
 }
 .banner-profile-pic {
   width: 584px;
+  height: 676px;
+  object-fit: cover;
+  margin-bottom: -5px;
 }
 
 /* main tyles */
@@ -268,3 +274,41 @@ main {
   margin-bottom: 30px;
 }
 /* resume section ends */
+
+/* footer starts */
+footer {
+  padding: 130px 230px;
+  display: flex;
+  gap: 100px;
+}
+.footer-column {
+  width: 50%;
+}
+.footer-column p {
+  line-height: 28px;
+  color: #474747;
+  margin-bottom: 30px;
+}
+.social-icons i {
+  font-size: 24px;
+  color: #fd6e0a;
+  margin-right: 24px;
+  transition: 0.3s;
+}
+.social-icons i:hover {
+  font-size: 26px;
+  color: cornflowerblue;
+}
+footer input[type="text"],
+[type="email"],
+textarea {
+  /* height: 64px; */
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 18px 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+/* footer ends */
