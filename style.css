@@ -130,7 +130,7 @@ nav ul li a:hover {
   width: 584px;
   height: 676px;
   object-fit: cover;
-  margin-bottom: -5px;
+  /* margin-bottom: -5px; */
 }
 
 /* main tyles */
