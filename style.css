@@ -11,6 +11,9 @@
 }
 
 /* shared style */
+section {
+  margin-bottom: 130px;
+}
 .secoundary-bg {
   background-color: #fff8f3;
 }
@@ -36,7 +39,9 @@
   border: 1px solid #fd6e0a;
   color: black;
 }
-
+.text-center {
+  text-align: center;
+}
 .section-title {
   font-size: 35px;
   font-weight: 700;
@@ -152,3 +157,73 @@ main {
   color: #474747;
   line-height: 30px;
 }
+/* about section ends */
+
+/* skil sexction starts */
+.skills h4 {
+  margin-bottom: 30px;
+}
+.skills p {
+  margin-bottom: 50px;
+}
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.skil {
+  padding: 30px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skil:hover {
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.skil img {
+  margin-bottom: 30px;
+}
+.img_redious {
+  border-radius: 1000px;
+}
+.js-3 {
+  width: 45px;
+  height: 45px;
+}
+/* animation style */
+.skil img {
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+.skil img::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 24px solid;
+  border-color: transparent #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.skill-description {
+  line-height: 28px;
+  color: #757575;
+}
+/* skil sexction ends */
